@@ -6,12 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face Detection - TensorFlow JS</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    video {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        display: none;
+    }
+    canvas{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    </style>
 </head>
 
 <body>
-    <h1>Face Detection</h1>
+    <h1>Face Detection - TensorFlow JS</h1>
+    <h5>GOOGLE PROJECT - By Kiran</h5>
     <video id="video" autoplay></video>
+    <canvas id="canvas" width="600px" height="400px"></canvas>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
 <script src="script.js"></script>
-
 </html>
